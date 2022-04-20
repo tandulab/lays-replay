@@ -1,0 +1,25 @@
+#navbar a.link {
+    background-color: #ffe300;
+    color: #363636;
+  }
+  #navbar.sticky {
+    background-color: #09a039;
+  }
+  .bg-circle {
+    background-image: url(../img/partner-circle.svg);
+    background-size: 124%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+  }
+  .bg-circle p {
+    position: relative;
+  
+  }
+  .bg-circle .container{
+      display: flex;
+      align-items: center;
+  }
+  .bg-circle .empty-div {
+      height: 86vh;
+  }

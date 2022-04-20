@@ -1,0 +1,85 @@
+#navbar a.link {
+  background-color: #ffe300;
+  color: #363636;
+}
+#navbar.sticky {
+  background-color: #09a039;
+}
+.bg-circle {
+  background-image: url(../img/partner-circle.svg);
+  background-size: 124%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+.bg-circle p {
+  position: relative;
+
+}
+.bg-circle .container{
+    display: flex;
+    align-items: center;
+}
+.bg-circle .empty-div {
+    height: 86vh;
+}
+.Rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
+.Rtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border-bottom: 1px solid #09a039;
+  display: flex;
+  align-items: center;
+}
+
+.Rtable-cell .lays-yellow{
+    height: 100px;
+}
+.Rtable-cell p {
+  color: #000;
+}
+.no-border{
+    border-bottom: 0px;
+}
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%;
+}
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%;
+}
+.Rtable--4cols > .Rtable-cell {
+  width: 25%;
+}
+.Rtable--5cols > .Rtable-cell {
+  width: 20%;
+}
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%;
+}
+
+.Rtable--3cols > .Rtable-cell.title {
+    width: 20%;
+    padding-left: 40px;
+}
+.Rtable--3cols > .Rtable-cell.lays{
+    width: 10%;
+}
+.Rtable--3cols >.Rtable-cell.uefa{
+    width: 60%;
+}
