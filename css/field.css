@@ -23,3 +23,55 @@
   .bg-circle .empty-div {
       height: 86vh;
   }
+
+  .field-values {
+    background-image: url(../img/manifesto.svg);
+    height: 78vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    max-width: 100%;
+    padding-top: 1vh;
+  }
+  .field-values h2 {
+    text-transform: uppercase;
+    font-size: 86px;
+    margin-bottom: 4vh;
+    line-height: 101px;
+    text-shadow: 1px 2px 16px #00000085;
+  }
+  .field-values h2 span {
+    font-size: 142px;
+  }
+
+  .field-values .text-wrapper{
+    justify-content: space-between;
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .field-values .desc p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .field-values p.y-text {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  @media (min-width: 1281px) {
+    .field-values .text-wrapper{
+      width: 76%;
+    }
+    .field-values .text-wrapper > div{
+      width: 35vh;
+    }
+    .field-values p{
+      line-height: 21px;
+    }
+    .field-values h2{
+      font-size: 142px;
+    }
+    .field-values h2 span{
+      font-size: 100px;
+    }
+  }

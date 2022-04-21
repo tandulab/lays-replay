@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-color: #000;
   position: relative;
+  overflow-x: hidden;
 }
 
 .bg-opacity {
@@ -71,6 +72,7 @@ body {
 
 #navbar.sticky img {
   height: 8vh;
+  top: 6%;
 }
 
 h1 {
@@ -242,12 +244,16 @@ h1 {
   }
 }
 
-.lays-white {
+.container .lays-white {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 20vh;
   margin-top: -6vh;
+}
+
+#navbar .lays-white{
+  margin-top: 0;
 }
 
 h1 {
@@ -323,7 +329,7 @@ h1 {
 }
 .manifesto {
   background-image: url(../img/manifesto.svg);
-  height:151vh;
+  height: 151vh;
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
@@ -379,8 +385,7 @@ h1 {
 }
 
 .wrapper-field {
-  margin: 10vh auto;
-  /* width: 75%; */
+  margin: 15vh auto 10vh auto;
   width: 75%;
   background-image: url(../img/field.png);
   background-size: 100%;
@@ -388,8 +393,9 @@ h1 {
   border-radius: 29px;
 }
 
-.wrapper-field p.title{
-  font-size: 23px;
+.wrapper-field p.title,
+.wrapper-program p.title {
+  font-size: 25px;
 }
 .bl-field {
   background-color: #ffe300;
@@ -404,17 +410,16 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 70%;
+  width: 75%;
   border-radius: 29px;
   margin: 10vh auto;
   background-image: url(../img/program.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.wrapper-program .bl-field {
-}
 
 .get-involved {
+  position:relative;
   text-align: center;
 }
 .get-involved h2 {
@@ -434,12 +439,30 @@ h1 {
   margin-top: 10px;
 }
 
+.get-involved .left-pack{
+  position: absolute;
+  left: -70vh;
+  bottom: -48vh;
+  height: 119vh;
+}
+
+.get-involved .right-pack{
+  bottom: -38vh;
+  position: absolute;
+  right: -64vh;
+  transform: rotate(12deg);
+  height: 108vh;
+}
+
 .inauguration {
   text-align: center;
 }
 .inauguration p {
   color: #fff;
   font-size: 18px;
+}
+.inauguration p:nth-child(1) {
+  margin-bottom: 13px;
 }
 
 .inauguration p.date {
@@ -477,6 +500,7 @@ h1 {
 .note {
   text-align: center;
   font-family: "HelveticaNeue";
+  font-size: 14px;
 }
 
 #map {
@@ -488,25 +512,29 @@ footer {
   font-family: "HelveticaNeue";
   background-color: #ffe300;
   color: #363636;
-  padding-bottom: 4vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-bottom: 10px;
 }
 
 footer p {
   font-size: 15px;
   font-weight: 500;
   text-align: center;
+  margin-top: 0;
 }
 footer p.address {
   font-size: 13px;
 }
 
-footer .container {
+footer .content {
   text-align: center;
 }
 
 footer img {
   width: 100px;
-  transform: translateY(-40%);
+  margin-top: -40px;
 }
 
 @media (min-width: 1281px) {
@@ -528,7 +556,7 @@ footer img {
     font-size: 124px;
   }
   .manifesto {
-    height:100vh;
+    height: 100vh;
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -540,17 +568,39 @@ footer img {
     font-size: 19px;
     line-height: 23px;
   }
-  .manifesto p.y-text{
+  .manifesto p.y-text {
     font-size: 25px;
     line-height: 29px;
   }
   .manifesto .desc {
     padding: 0px 21vh;
   }
-  .wrapper-field{
-      width: 70vh;
+  .wrapper-field,
+  .wrapper-program {
+    width: 65vh;
+    margin: 5vh auto;
   }
-  .wrapper-field p.title{
+  .wrapper-field {
+    margin-top: 10vh auto;
+  }
+  .wrapper-field p.title,
+  .wrapper-program p.title {
     font-size: 27px;
+  }
+
+  .get-involved{
+    margin-top:16vh;
+  }
+  .get-involved .left-pack{
+    position: absolute;
+    left: -65vh;
+    bottom: -34vh;
+  }
+  
+  .get-involved .right-pack{
+    bottom: -34vh;
+    position: absolute;
+    right: -61vh;
+    transform: rotate(12deg);
   }
 }

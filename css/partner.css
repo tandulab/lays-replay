@@ -30,8 +30,8 @@
   padding: 0;
   background-color: #fff;
   border-radius: 25px;
-  width: 80%;
-  margin: 0 auto;
+  width: 93%;
+  margin: 6vh auto 0 auto;
 }
 .Rtable-cell {
   box-sizing: border-box;
@@ -44,9 +44,11 @@
   display: flex;
   align-items: center;
 }
-
+.Rtable-cell img {
+  height: 8vh;
+}
 .Rtable-cell .lays-yellow{
-    height: 100px;
+    height: 11vh;
 }
 .Rtable-cell p {
   color: #000;
@@ -82,4 +84,25 @@
 }
 .Rtable--3cols >.Rtable-cell.uefa{
     width: 60%;
+}
+
+.bg-circle p {
+  font-size: 17px;
+  bottom: 0;
+}
+
+@media (min-width: 1281px) {
+
+  .bg-circle p {
+    font-size: 17px;
+    bottom: 0;
+  }
+  .Rtable{
+    margin-top: 0;
+    width: 80%;
+  }
+  .Rtable-cell .lays-yellow {
+    height: 100px;
+  }
+  
 }
