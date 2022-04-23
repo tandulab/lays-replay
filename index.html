@@ -6,7 +6,8 @@
     <title>Lay's</title>
     <link href="./css/font.css" rel="stylesheet" type="text/css" />
     <!-- <link href="./css/menu-mobile.css" rel="stylesheet" type="text/css" /> -->
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script
       async
@@ -19,12 +20,10 @@
   <body>
     <div class="bg-opacity"></div>
     <div id="navbar">
-      <div class="container">
-        <a href="index.html"><img src="img/lays-navbar.svg" /></a>
-        <a href="partner.html" class="link">I partner</a>
-        <a href="campo.html" class="link">Il campo</a>
-        <a href="#progetto" class="link">Il progetto</a>
-      </div>
+      <a href="index.html"><img src="img/lays-navbar.svg" /></a>
+      <a href="partner.html" class="link">I partner</a>
+      <!-- <a href="campo.html" class="link">Il campo</a> -->
+      <a id="link-il-progetto" href="#progetto" class="link">Il progetto</a>
     </div>
     <!-- <div id="menu-mobile">
       <div class="menu">
@@ -54,16 +53,32 @@
     </div> -->
 
     <div class="bg-circle" id="main-header">
-      <div class="empty-div"></div>
-      <img src="img/lays-pack.svg" class="left-pack" />
-      <img src="img/lays-pack-right.svg" class="right-pack" />
-      <img src="img/lays-white.svg" class="white-pack" />
-      <p class="center-text uppercase">
-        Realizziamo campi da calcetto<br />
-        con plastica riciclata*<br />
-        in giro per il mondo
-      </p>
-      <img src="img/lays-white.svg" class="lays-white" />
+      <!-- <div class="empty-div"></div> -->
+      <img class="bg-image" src="img/circle-home.svg">
+      <div class="absolute-fill">
+        <div class="layout-center-box ar ar-by-height">
+          <img src="img/aspect-1-1.svg" class="ar-img">
+          <div class="ar-inner">
+            <img src="img/lays-pack.svg" class="left-pack" />
+            <img src="img/lays-pack-right.svg" class="right-pack" />
+            <img src="img/lays-white.svg" class="white-pack" />
+            <p class="center-text uppercase">
+              Realizziamo campi da calcetto<br />
+              con plastica riciclata*<br />
+              in giro per il mondo
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lays-white-alone">
+      <div class="layout ar ar-by-width">
+        <img src="img/aspect-5-1.svg" class="ar-img">
+        <div class="ar-inner">
+          <img src="img/lays-white.svg" class="lays-white" />
+        </div>
+      </div>
     </div>
 
     <div class="container" id="progetto">
@@ -135,7 +150,9 @@
           <div class="dl-flex j-between fl-wrap"></div>
         </div>
       </div>
+    </div>
 
+    <div id="manifesto" class="container">
       <div class="manifesto">
         <img src="img/lays-white.svg" class="lays-white" />
         <h1>Il manifesto</h1>
@@ -162,7 +179,9 @@
           </p>
         </div>
       </div>
+    </div>
 
+    <div class="container">
       <div class="wrapper-center">
         <div class="wrapper-field">
           <div class="bl-field">
