@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
     position: relative;
     background-position: center;
+    height: 100vh;
   }
   .bg-circle p {
     position: relative;
@@ -26,22 +27,22 @@
 
   .field-values {
     background-image: url(../img/manifesto.svg);
-    height: 78vh;
+    height: 122vh;
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
     max-width: 100%;
-    padding-top: 1vh;
+    padding-top: 0.5vh;
   }
   .field-values h2 {
     text-transform: uppercase;
-    font-size: 86px;
+    font-size: 142px;
     margin-bottom: 4vh;
     line-height: 101px;
     text-shadow: 1px 2px 16px #00000085;
   }
   .field-values h2 span {
-    font-size: 142px;
+    font-size: 86px;
   }
 
   .field-values .text-wrapper{
@@ -50,7 +51,7 @@
     text-align: left;
     margin: 0 auto;
   }
-  .field-values .desc p {
+  .field-values p {
     font-size: 17px;
     line-height: 22px;
   }
@@ -58,7 +59,72 @@
     font-size: 23px;
     line-height: 28px;
   }
+  .field-values .text-wrapper{
+    width: 82%;
+  }
+  .field-values .text-wrapper > div{
+    width: 57vh;
+  }
+
+
+  .wrapper-imgs{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .arrow{
+    position: absolute;
+    left: -68vh;
+    top: -26vh;
+    height: 275vh;
+  }
+
+  .green-field{
+    position: absolute;
+    height: 45vh;
+    right: 13vh;
+    top: calc(19% - 20px);
+  }
+
+  .wrapper-imgs img{
+    position:absolute;
+  }
+
+  .step1{
+    height: 35vh;
+    bottom: 11vh;
+    left: 26vh;
+  }
+
+  .step2{
+    height: 13vh;
+    top: 13vh;
+    left: 51vh;
+  }
+
+  .step3{
+    width: 94vh;
+    left: calc(50% - 47vh);
+    top: -10vh;
+  }
+  .arrow{
+    left: -68vh;
+    top: -26vh;
+    height: 250vh;
+  }
+
+  .img-steps{
+    width: 90vw;
+  }
+
+
+
   @media (min-width: 1281px) {
+    .field-values{
+      height: 78vh;
+    }
     .field-values .text-wrapper{
       width: 76%;
     }

@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lay's</title>
     <link href="./css/font.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./css/menu-mobile.css" rel="stylesheet" type="text/css" /> -->
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script
@@ -24,6 +26,32 @@
         <a href="#progetto" class="link">Il progetto</a>
       </div>
     </div>
+    <!-- <div id="menu-mobile">
+      <div class="menu">
+        <div class="options">
+          <div class="option selected">Home</div>
+          <div class="option">About</div>
+          <div class="option">Products</div>
+          <div class="option">Contact</div>
+        </div>
+      </div>
+      <svg
+        class="x"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 220 400"
+        height="400"
+        width="220"
+      >
+        <g class="top-bars" stroke-width="4">
+          <path class="bar bar1" d="M 178,20 H 202" />
+          <path class="bar bar2" d="M 178,29 H 202" />
+        </g>
+      </svg>
+      <div
+        class="menu-click-area"
+        onclick="document.querySelector('.phone').classList.toggle('active')"
+      ></div>
+    </div> -->
 
     <div class="bg-circle" id="main-header">
       <div class="empty-div"></div>
@@ -35,10 +63,10 @@
         con plastica riciclata*<br />
         in giro per il mondo
       </p>
+      <img src="img/lays-white.svg" class="lays-white" />
     </div>
 
     <div class="container" id="progetto">
-      <img src="img/lays-white.svg" class="lays-white" />
       <h1 class="project">Il progetto</h1>
 
       <div class="d-table project-wrapper">
@@ -79,14 +107,17 @@
               <img src="img/rigiocare.svg" />
               <p>Rigiocare</p>
               <span
-                >Creiamo momenti di<br> gioia attraverso la<br> forza positiva del calcio</span
+                >Creiamo momenti di<br />
+                gioia attraverso la<br />
+                forza positiva del calcio</span
               >
             </div>
             <div class="block">
               <img src="img/riusare.svg" />
               <p>Riusare</p>
               <span
-                >Diamo una seconda vita alla<br> plastica, realizzando campi da<br>
+                >Diamo una seconda vita alla<br />
+                plastica, realizzando campi da<br />
                 calcetto in plastica riciclata*</span
               >
             </div>
@@ -94,8 +125,9 @@
               <img src="img/reinventare.svg" />
               <p>Reinventare</p>
               <span
-                >le regole del gioco,<br> mettendoci al servizio<br> della
-                comunità</span
+                >le regole del gioco,<br />
+                mettendoci al servizio<br />
+                della comunità</span
               >
             </div>
           </div>
@@ -131,27 +163,29 @@
         </div>
       </div>
 
-      <div class="wrapper-field">
-        <div class="bl-field">
-          <p class="title">Il campo</p>
-          <p>
-            Forniamo infrastrutture sostenibili alle comunità locali sotto forma
-            di campi da calcetto in erba sintetica, realizzati con plastica
-            riciclata* e totalmente riciclabili alla fine del loro ciclo di
-            vita.
-          </p>
+      <div class="wrapper-center">
+        <div class="wrapper-field">
+          <div class="bl-field">
+            <p class="title">Il campo</p>
+            <p>
+              Forniamo infrastrutture sostenibili alle comunità locali sotto forma
+              di campi da calcetto in erba sintetica, realizzati con plastica
+              riciclata* e totalmente riciclabili alla fine del loro ciclo di
+              vita.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="wrapper-program">
-        <div class="bl-field">
-          <p class="title">Il programma</p>
-          <p>
-            Lavorariamo con partner locali per costruire programmi educativi di
-            stampo sportivo, utilizzando la forza positiva del gioco e del
-            calcio per rispondere a necessità sociali che impattano le comunità
-            locali.
-          </p>
+  
+        <div class="wrapper-program">
+          <div class="bl-field">
+            <p class="title">Il programma</p>
+            <p>
+              Lavorariamo con partner locali per costruire programmi educativi di
+              stampo sportivo, utilizzando la forza positiva del gioco e del
+              calcio per rispondere a necessità sociali che impattano le comunità
+              locali.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -292,14 +326,14 @@
           ],
         });
         marker = new google.maps.Marker({
-            position: {lat: 45.0856373, lng: 7.6800649},
-            map
-            // ,
-            // icon: {
-            //  url: "<?php echo get_field('contacts__marker', 27); ?>",
-            //  scaledSize: new google.maps.Size(64, 64)
-            //  }
-            });
+          position: { lat: 45.0856373, lng: 7.6800649 },
+          map,
+          // ,
+          // icon: {
+          //  url: "<?php echo get_field('contacts__marker', 27); ?>",
+          //  scaledSize: new google.maps.Size(64, 64)
+          //  }
+        });
       }
     </script>
   </body>
