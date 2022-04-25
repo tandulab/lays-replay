@@ -346,8 +346,8 @@ h1 {
 }
 
 .wrapper-field {
-  margin: 15vh auto 10vh auto;
-  width: 114vh;
+  margin: 50px auto;
+  width: 654px;
   background-image: url(../img/field.png);
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -364,22 +364,64 @@ h1 {
   box-shadow: 2px 2px 4px #00000085;
   color: #363636;
   padding: 44px 30px;
-  /* width: 50vh; */
-  width: 40%;
+  width: 270px;
+  /* width: 40%; */
 }
 
 .wrapper-program {
-  display: flex;
+  margin: 50px auto;
+    width: 654px;display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 114vh;
+  /* width: 114vh; */
   border-radius: 29px;
-  margin: 10vh auto;
+  /* margin: 10vh auto; */
   background-image: url(../img/program.jpg);
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 
+.get-involved {
+  position: relative;
+  text-align: center;
+}
+.get-involved h2 {
+  text-transform: uppercase;
+  font-size: 86px;
+  margin-bottom: 0;
+  line-height: 101px;
+}
+.get-involved h2 span {
+  font-size: 142px;
+}
+
+.get-involved p {
+  color: #ffe300;
+  font-size: 31px;
+  line-height: 38px;
+  margin-top: 10px;
+}
+
+.lateral-packs {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.lateral-packs .left-pack {
+  position: absolute;
+  left: -332px;
+  height: 1000px;
+  top: -190px;
+}
+
+.lateral-packs .right-pack {
+  position: absolute;
+  right: -307px;
+  height: 925px;
+  top: -160px;
+  transform: rotate(12deg);
+}
 @media screen and (min-width: 1281px) {
   .three-blocks {
     width: 72%;
@@ -416,8 +458,8 @@ h1 {
   }
   .wrapper-field,
   .wrapper-program {
-    width: 65vh;
-    margin: 5vh auto;
+    /* width: 654px; */
+    /* margin: 50px auto; */
   }
   .wrapper-field {
     margin-top: 10vh auto;
@@ -426,25 +468,39 @@ h1 {
   .wrapper-program p.title {
     font-size: 27px;
   }
+}
 
-  .get-involved {
-    margin-top: 16vh;
+@media screen and (max-width: 1450px) {
+  .lateral-packs .left-pack {
+    height: 889px;
+    top: -101px;
   }
-  .get-involved .left-pack {
-    position: absolute;
-    left: -65vh;
-    bottom: -34vh;
+  
+  .lateral-packs .right-pack {
+    height: 860px;
+    top: -101px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .lateral-packs .left-pack {
+    height: 831px;
+    top: -44px;
+  }
+  
+  .lateral-packs .right-pack {
+    height: 800px;
+    top: -40px;
   }
 
-  .get-involved .right-pack {
-    bottom: -34vh;
-    position: absolute;
-    right: -61vh;
-    transform: rotate(12deg);
+  .get-involved h2 span {
+    font-size: 135px;
   }
-
-  .bl-field {
-    width: 28vh;
+  .get-involved h2 {
+    font-size: 78px;
+  }
+  .get-involved p {
+    /* font-size: 26px;
+    line-height: 32px; */
   }
 }
 
@@ -524,7 +580,7 @@ h1 {
   }
 
   .wrapper-field {
-    margin: 15vh auto 2vh auto;
+    /* margin: 15vh auto 2vh auto; */
   }
   .get-involved h2 {
     font-size: 62px;
@@ -541,11 +597,16 @@ h1 {
     font-size: 25px;
     margin-top: 0;
   }
-  .get-involved .right-pack {
-    height: 97vh;
+
+  .lateral-packs .left-pack {
+    left: -345px;
+    height: 751px;
+    top: -56px;
   }
-  .get-involved .left-pack {
-    height: 108vh;
+  
+  .lateral-packs .right-pack {
+    right: -345px;height: 735px;
+    top: -51px;
   }
 }
 
@@ -565,6 +626,26 @@ h1 {
   } */
   h1 {
     font-size: 70px;
+  }
+  .get-involved h2 span {
+    font-size: 93px;
+  }
+  .get-involved h2 {
+    font-size: 56px;
+  }
+  .get-involved p {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .lateral-packs .left-pack {
+    left: -363px;
+    height: 751px;
+    top: -30px;
+  }
+  
+  .lateral-packs .right-pack {
+    right: -369px;height: 735px;
+    top: -34px;
   }
 }
 
@@ -653,7 +734,7 @@ h1 {
     line-height: 27px;
   }
   .inauguration p.date {
-    font-size: 22px;
+    font-size: 20px !important;
     margin-top: 0;
   }
 
@@ -667,6 +748,22 @@ h1 {
   }
   footer{
     padding: 0 5% 5% 5%;
+  }
+  .get-involved h2 span {
+    font-size: 60px;
+  }
+  .get-involved h2 {
+    font-size: 37px;
+  }
+  .get-involved p {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .get-involved .date {
+    font-size: 1;
+  }
+  .lateral-packs {
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
@@ -747,7 +844,7 @@ h1 {
     flex-direction: row;
     background-size: auto 97%;
     background-position: 45%;
-    margin: 7vh auto 0vh auto;
+    margin: 50px auto 0 auto;
   }
   .bl-field{
     width: 100%;
