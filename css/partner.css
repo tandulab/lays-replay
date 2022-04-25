@@ -83,6 +83,39 @@ body {
   top: 6%;
 }
 
+/* PC size */
+@media screen and (min-width: 1280px) {
+  #navbar {
+    padding: 30px 15%;
+  }
+  #navbar.sticky {
+    padding: 15px 15%;
+  }
+}
+/* Mobile and Tablet size */
+@media screen and (max-width: 1179px) {
+  #navbar #link-il-progetto {
+    display: none;
+  }
+}
+/* Mobile size */
+@media screen and (max-width: 768px) {
+  #navbar {
+    padding: 8px 8px;
+  }
+  #navbar img {
+    opacity: 0;
+    height: 66px;
+  }
+  #navbar.sticky img {
+    opacity: 1;
+    height: 66px;
+  }
+  #navbar a.link{
+    padding: 8px 18px !important;
+  }
+}
+
 h1 {
   font-family: "Mark Pro";
   font-weight: bold;

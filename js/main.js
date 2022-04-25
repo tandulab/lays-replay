@@ -45,6 +45,12 @@ $(function () {
     }
   }, 1000);
 
+  $('#link-il-progetto').on('click', function () {
+    $('html,body').animate({
+               scrollTop: $("#progetto").offset().top
+           }, 1000);
+});
+
 });
 
 // When the user scrolls the page, execute myFunction
