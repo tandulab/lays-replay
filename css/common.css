@@ -25,7 +25,8 @@ body {
 
 /* NAVBAR */
 #navbar {
-  height: 45px;background-color: transparent;
+  height: 45px;
+  background-color: transparent;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -72,7 +73,7 @@ body {
 #navbar.sticky img {
   height: 90%;
   top: 6%;
-} 
+}
 #navbar .lays-white {
   margin-top: 0;
 }
@@ -104,7 +105,7 @@ body {
     opacity: 1;
     height: 66px;
   }
-  #navbar a.link{
+  #navbar a.link {
     padding: 8px 18px !important;
   }
 }
@@ -370,7 +371,8 @@ h1 {
 
 .wrapper-program {
   margin: 50px auto;
-    width: 654px;display: flex;
+  width: 654px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   /* width: 114vh; */
@@ -475,7 +477,7 @@ h1 {
     height: 889px;
     top: -101px;
   }
-  
+
   .lateral-packs .right-pack {
     height: 860px;
     top: -101px;
@@ -486,7 +488,7 @@ h1 {
     height: 831px;
     top: -44px;
   }
-  
+
   .lateral-packs .right-pack {
     height: 800px;
     top: -40px;
@@ -603,9 +605,10 @@ h1 {
     height: 751px;
     top: -56px;
   }
-  
+
   .lateral-packs .right-pack {
-    right: -345px;height: 735px;
+    right: -345px;
+    height: 735px;
     top: -51px;
   }
 }
@@ -642,9 +645,10 @@ h1 {
     height: 751px;
     top: -30px;
   }
-  
+
   .lateral-packs .right-pack {
-    right: -369px;height: 735px;
+    right: -369px;
+    height: 735px;
     top: -34px;
   }
 }
@@ -704,7 +708,7 @@ h1 {
     margin: 60px 0;
   }
   .bl-field {
-    padding:13px 26px;
+    padding: 13px 26px;
     width: 56%;
   }
   /* .manifesto {
@@ -738,7 +742,7 @@ h1 {
     margin-top: 0;
   }
 
-  #countDown div > div{
+  #countDown div > div {
     font-size: 29px;
     border-radius: 15px;
     margin: 0 8px;
@@ -746,7 +750,7 @@ h1 {
     height: 44px;
     padding: 5px;
   }
-  footer{
+  footer {
     padding: 0 5% 5% 5%;
   }
   .get-involved h2 span {
@@ -767,6 +771,14 @@ h1 {
   }
 }
 @media screen and (max-width: 500px) {
+  #countDown div > div {
+    margin: 0 10px !important;
+    font-size: 34px !important;
+    border-radius: 22px;
+    width: 50px !important;;
+    height: 50px !important;;
+    padding: 7px;
+  }
   /* .bg-circle{
       background-size: auto 100%;
       height: 84vh;
@@ -801,7 +813,7 @@ h1 {
     font-size: 35px;
     margin: 9vw 0;
   }
-  .project-wrapper{
+  .project-wrapper {
     padding-left: 5%;
     width: 90%;
   }
@@ -811,10 +823,10 @@ h1 {
   .replay img {
     height: 10vw;
   }
-  .three-blocks{
-    margin:20px 0;
+  .three-blocks {
+    margin: 20px 0;
   }
-  .three-blocks .block p{
+  .three-blocks .block p {
     margin: 8px 0;
   }
   .three-blocks .block img {
@@ -824,19 +836,19 @@ h1 {
     font-size: 35px;
     margin: 20px 0 20px 0;
   }
-  .manifesto{
+  .manifesto {
     height: auto;
     padding-bottom: 14vh;
     background-size: auto 100%;
     background-position: center;
   }
 
-  .manifesto .desc{
+  .manifesto .desc {
     padding: 0 5%;
     text-align: left;
   }
 
-  .wrapper-center{
+  .wrapper-center {
     padding: 0 5%;
   }
   .wrapper-field {
@@ -846,7 +858,7 @@ h1 {
     background-position: 45%;
     margin: 50px auto 0 auto;
   }
-  .bl-field{
+  .bl-field {
     width: 100%;
   }
   .get-involved h2 {
@@ -866,13 +878,13 @@ h1 {
     margin-top: 0;
   }
   .get-involved .left-pack,
-  .get-involved .right-pack{
+  .get-involved .right-pack {
     display: none;
   }
-  #countDown{
+  #countDown {
     margin-bottom: 0;
   }
-  .inauguration p:nth-child(1){
+  .inauguration p:nth-child(1) {
     margin-bottom: 7px;
   }
   .inauguration p.date {
@@ -881,33 +893,26 @@ h1 {
   }
 }
 /* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .bg-circle {
-      background-size: 100%;
-      height: auto;
-      background-position: top;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .bg-circle {
+    background-size: 100%;
+    height: auto;
+    background-position: top;
   }
   .bg-circle p {
     font-size: 12px;
     top: 46vh;
-}
+  }
 }
 
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) {
-    .bg-circle p {
-      font-size: 16px;
-      top: 58vh;
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+  .bg-circle p {
+    font-size: 16px;
+    top: 58vh;
   }
   .bg-circle .white-pack {
     height: 34vh;
     left: calc(50% - 17vh);
     top: 23vh;
-}
+  }
 }
