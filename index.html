@@ -9,12 +9,6 @@
     <link href="./css/common.css" rel="stylesheet" type="text/css" />
     <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnTSBeM4PBUv3jFk2phFfecP0_Rhfwl2c&callback=initMap"
-      type="text/javascript"
-    ></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -22,15 +16,68 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
+    <script type="text/javascript">
+      var _iub = _iub || [];
+      _iub.csConfiguration = {
+        ccpaAcknowledgeOnDisplay: true,
+        ccpaApplies: true,
+        consentOnContinuedBrowsing: false,
+        enableCcpa: true,
+        floatingPreferencesButtonDisplay: "bottom-right",
+        invalidateConsentWithoutLog: true,
+        perPurposeConsent: true,
+        siteId: 2627954,
+        whitelabel: false,
+        cookiePolicyId: 79425503,
+        lang: "it",
+        banner: {
+          acceptButtonCaptionColor: "#212121",
+          acceptButtonColor: "#ffe300",
+          acceptButtonDisplay: true,
+          closeButtonRejects: true,
+          customizeButtonColor: "#212121",
+          customizeButtonDisplay: true,
+          explicitWithdrawal: true,
+          listPurposes: true,
+          position: "float-bottom-left",
+          rejectButtonColor: "#212121",
+          rejectButtonDisplay: true,
+        },
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.iubenda.com/cs/ccpa/stub.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.iubenda.com/cs/iubenda_cs.js"
+      charset="UTF-8"
+      async
+    ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      suppressedsrc="https://www.googletagmanager.com/gtag/js?id=G-BK5WW85PXZ" class=“_iub_cs_activate”
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BK5WW85PXZ");
+    </script>
   </head>
 
   <body>
     <div class="bg-opacity"></div>
     <div id="navbar">
-      <a href="index.html"><img src="img/lays-navbar.svg" /></a>
+      <a href="/"><img src="img/lays-navbar.svg" /></a>
       <a href="partner.html" class="link">I partner</a>
       <!-- <a href="campo.html" class="link">Il campo</a> -->
-      <a id="link-il-progetto" href="index.html#progetto" class="link"
+      <a id="link-il-progetto" href="/#progetto" class="link"
         >Il progetto</a
       >
     </div>
@@ -122,8 +169,8 @@
               <img src="img/reinventare.svg" />
               <p>Reinventare</p>
               <span>
-                Reinventiamo le regole <br>
-                del gioco, mettendoci al servizio<br>
+                Reinventiamo le regole <br />
+                del gioco, mettendoci al servizio<br />
                 della comunità.
               </span>
             </div>
@@ -225,8 +272,9 @@
           dalle ore 14:00 alle ore 18:00.
         </p>
         <p class="address">
-          PepsiCo Beverages Italia S.r.l. Via del Bosco Rinnovato, 8 – 20057 Assago Milanofiori (MI) Italia
-          - Lay’s® è un marchio registrato da PepsiCo Inc.
+          PepsiCo Beverages Italia S.r.l. Via del Bosco Rinnovato, 8 – 20057
+          Assago Milanofiori (MI) Italia - Lay’s® è un marchio registrato da
+          PepsiCo Inc.
         </p>
       </div>
     </footer>
@@ -333,14 +381,15 @@
         });
         marker = new google.maps.Marker({
           position: { lat: 45.0856373, lng: 7.6800649 },
-          map,
-          // ,
-          // icon: {
-          //  url: "<?php echo get_field('contacts__marker', 27); ?>",
-          //  scaledSize: new google.maps.Size(64, 64)
-          //  }
+          map
         });
       }
     </script>
+        <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnTSBeM4PBUv3jFk2phFfecP0_Rhfwl2c&callback=initMap"
+        type="text/javascript"
+      ></script>
   </body>
 </html>

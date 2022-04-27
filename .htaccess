@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^laysreplay.it[NC,OR]
+RewriteCond %{HTTP_HOST} ^www.laysreplay.it [NC]
+RewriteRule ^(.*)$ http://laysreplay.net/$1 [L,R=301,NC]
