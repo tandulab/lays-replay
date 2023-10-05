@@ -283,7 +283,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      let map, marker;
+      let map, marker, marker1;
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 45.0856373, lng: 7.6800649 },
@@ -382,6 +382,9 @@
         });
         marker = new google.maps.Marker({
           position: { lat: 45.0856373, lng: 7.6800649 },
+          map
+        });
+        marker1 = new google.maps.Marker({
           position: { lat: 40.8993645, lng: 14.240036 },
           map
         });
