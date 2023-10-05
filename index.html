@@ -183,29 +183,31 @@
 
     <div id="manifesto" class="container">
       <div class="manifesto">
-        <img src="img/lays-white.svg" class="lays-white" />
-        <h1>Il manifesto</h1>
-        <div class="desc">
-          <p>
-            Quando un pacchetto di Lay’s® viene aperto si condivide GIOIA.<br />
-            La gioia è irresistibile e dovremmo tutti goderne un po’ di più.
-          </p>
-          <p>
-            Lay’s® ha trovato ora un modo per generare ancora più sorrisi,
-            realizzando campi da calcetto in plastica riciclata* da donare alle
-            diverse comunità in giro per il mondo.
-          </p>
-          <p class="y-text">
-            È nato così Lay’s® replay che quest’anno è approdato anche in
-            Italia!
-          </p>
-          <p>
-            Si tratterà di più che un semplice campo da calcetto, infatti questo
-            sarà uno spazio dove la comunità potrà unirsi e stringersi attorno
-            al gioco più amato dagli italiani: il CALCIO, grazie anche all’aiuto
-            di partner locali e internazionali, uniti per un unico scopo:
-            espandere momenti di gioia.
-          </p>
+        <div>
+          <img src="img/lays-white.svg" class="lays-white" />
+          <h1>Il manifesto</h1>
+          <div class="desc">
+            <p>
+              Quando un pacchetto di Lay’s® viene aperto si condivide GIOIA.<br />
+              La gioia è irresistibile e dovremmo tutti goderne un po’ di più.
+            </p>
+            <p>
+              Lay’s® ha trovato ora un modo per generare ancora più sorrisi,
+              realizzando campi da calcetto in plastica riciclata* da donare alle
+              diverse comunità in giro per il mondo.
+            </p>
+            <p class="y-text">
+              È nato così Lay's® RePlay che quest’anno è approdato anche in
+              Italia!
+            </p>
+            <p>
+              Si tratterà di più che un semplice campo da calcetto, infatti questo
+              sarà uno spazio dove la comunità potrà unirsi e stringersi attorno
+              al gioco più amato dagli italiani: il CALCIO, grazie anche all’aiuto
+              di partner locali e internazionali, uniti per un unico scopo:
+              espandere momenti di gioia.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -246,18 +248,17 @@
     <div class="container">
       <div class="get-involved">
         <h2>Mettiti in gioco<br /><span>anche tu!</span></h2>
-        <p>
-          Porta i tuoi pacchetti di Lay’s® e aiutaci<br />
-          a CREARE ulteriori momenti di GIOIA.
-        </p>
       </div>
 
-      <div class="inauguration">
-        <p>Inaugurazione:</p>
-        <p class="date">19 maggio al Cecchi Point, Torino.</p>
+      <div class="text-center campi-in-italia">
+        <p>I campi in Italia:</p>
+        <div class="date">
+          <p>Torino, Cecchi Point</p>
+          <p>Scampia, Parco Ciro Esposito</p>
+        </div>
       </div>
 
-      <div id="countDown"></div>
+      <!-- <div id="countDown"></div> -->
       <p class="note">* campo realizzato con il 32% di plastica riciclata</p>
     </div>
 
@@ -381,6 +382,7 @@
         });
         marker = new google.maps.Marker({
           position: { lat: 45.0856373, lng: 7.6800649 },
+          position: { lat: 40.8993645, lng: 14.240036 },
           map
         });
       }

@@ -108,22 +108,38 @@
   #progetto .lays-yellow img,
   #progetto .replay img {
     padding-left: 0;
-  padding-right: 16px;}
+    padding-right: 16px;
+  }
 }
 
 .manifesto {
   background-image: url(../img/manifesto.svg);
   /* height: 151vh; */
   height: 0;
-  padding-bottom: 100%;
+  /* padding-bottom: 100%; */
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
   max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+.manifesto > div {
+  padding: 0 10rem;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .manifesto .lays-white {
-  padding-top: 5vw;
+  /* padding-top: 5vw; */
   max-width: 200px;
 }
 .manifesto .desc {
@@ -151,7 +167,6 @@
     padding: 0;
   }
   .manifesto .lays-white {
-    padding-top: 5vw;
     max-width: 121px;
   }
   .manifesto p.y-text {
@@ -163,39 +178,77 @@
     margin: 3vw 0 5vw 0;
   }
 }
+@media screen and (min-width: 1360px) {
+  .manifesto {
+    width: 1118px;
+    height: 1118px;
+    margin: auto;
+    padding: 0;
+  }
+  .manifesto > div {
+    padding: 0;
+  }
+
+  .manifesto h1 {
+    margin: 70px 0 90px 0;
+  }
+}
+
+@media screen and (max-width: 1143px) {
+  .manifesto > div {
+    padding: 0 9rem;
+  }
+  .manifesto .desc p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .manifesto h1{
+    margin: 3vw 0 3vw 0;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .manifesto .lays-white {
+    max-width: 88px;
+  }
+  .manifesto > div {
+    padding: 0 6rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .manifesto h1 {
+    margin: 2vw 0 1vw 0;
+    font-size: 37px;
+  }
+  .manifesto > div {
+    padding: 0 5rem;
+  }
+}
 @media screen and (max-width: 767px) {
   #manifesto.container {
     padding: 0;
   }
   .manifesto h1 {
     font-size: 35px;
-    margin: 20px 0 20px 0;
+    margin: 5vw 0 4vw 0;
+    line-height: 38px;
   }
-  .manifesto{
+  .manifesto {
     height: auto;
     padding-bottom: 14vh;
     background-size: auto 100%;
     background-position: center;
   }
 
-  .manifesto .desc{
-    padding: 0 5%;
+  .manifesto .desc {
+    padding: 0;
     text-align: left;
   }
-}
-@media screen and (min-width: 1360px) {
-  .manifesto {
-    width: 1118px;
-    height: 1118px;
-    margin: auto;
-    padding-bottom: 0;
-  }
-
-  .manifesto h1{
-    margin: 70px 0 90px 0;
+  .manifesto .lays-white {
+    padding-top: 12vw;
+    max-width: 120px;
   }
 }
-
 .inauguration {
   text-align: center;
 }
@@ -277,4 +330,15 @@ footer .content {
 footer img {
   width: 100px;
   margin-top: -40px;
+}
+
+.campi-in-italia {
+  font-size: 1.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
 }
