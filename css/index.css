@@ -248,6 +248,9 @@
     padding-top: 12vw;
     max-width: 120px;
   }
+  .manifesto > div {
+    padding: 0 2rem;
+  }
 }
 .inauguration {
   text-align: center;
